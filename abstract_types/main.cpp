@@ -1,19 +1,20 @@
-#include <cstdlib>
 #include <iostream>
-
-#define INICIO 1
-#define FIM 1000
 
 using namespace std;
 
+int main(){
 
+    struct product {
+        int weight;
+        double price;
+    };
 
-int main(int argc, char const *argv[])
-{    
-    int i;
+    product product1;
+    product1.weight = 10;
+    product1.price = 20.21;
 
-    for(i= INICIO; i <= FIM; i++)
-        cout<< "\n" << i;
-        
+    cout << "Produto preço: " << product1.price;
+    cout << "Produto: " << product1;
+
     return 0;
 }
