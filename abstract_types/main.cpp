@@ -14,7 +14,8 @@ int main(){
     product1.price = 20.21;
 
     cout << "Produto preço: " << product1.price;
-    cout << "Produto: " << product1;
+    cout << "Produto: " << product1.weight; 
+
 
     return 0;
 }
